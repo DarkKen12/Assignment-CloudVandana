@@ -1,0 +1,159 @@
+*{
+    font-family: 'Gabarito';
+    
+}
+body{
+background-image: url("https://media.istockphoto.com/id/944880340/photo/chaotic-black-low-poly-surface-abstract-3d-render.jpg?b=1&s=170667a&w=0&k=20&c=_zTTb5QQqP9yjC1WYh1pzolYb70MEE11rVm23rxBDgo=");
+background-size: cover;
+
+}
+
+
+  .container1{
+   position: absolute;
+   top: 15%;
+   left: 20%;
+    width: 60%;
+    border-radius: 22px;
+    box-shadow: 10px 10px 5px rgb(175, 45, 45);
+    background-color: rgb(0, 0, 0);
+    color: white;
+   
+  }
+  table{
+    margin-top: 2%;
+    width: 100%;
+    font-size: 22px;
+    
+  }
+  table td {
+    padding-top: 2%;
+    width: 55%;
+  }
+  table td:first-child{
+    width: 50%;
+    text-align: left; 
+    padding-left: 15%;   
+  }
+  
+
+
+  table td input, table td select {
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+
+  #country{
+    width: 41%;
+  }
+
+ #Gender{
+    font-size: 18px;
+ }
+
+  table td input , table td select {
+    font-size: 18px;
+    padding: 5px;
+
+  }
+  #date{
+    width: 39%;
+  }
+
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    
+  }
+  #btnReset{
+    margin-right: 2%;
+    font-size: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: bold;
+  }
+  #btnSubmit{
+    font-size: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: bold;
+    
+  }
+
+button:hover{
+    background-color: rgb(241, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+.text0{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 2%;
+}
+
+#symbol::after {
+    content: "*";
+    color: red;
+  }
+ 
+
+  @media screen and (max-width:540px) {
+    .container1{
+        width: 100%;
+        left : 0;
+        padding: 4% ;
+    }
+    table td input, table td select{
+      width: 100%;
+    }
+    #country, #date{
+      width: 100%;
+    }
+    table td:first-child{
+      padding-left: 3%;
+    }
+  }
+  @media screen and (max-width:680px){
+   
+   
+   
+    #date {
+      width: 96%;
+    }
+    #country{
+      width: 100%;
+    }
+  }
+@media screen and (max-width:620px) {
+  
+  table td:first-child{
+    padding-left: 0%;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+   
+</head>
+<body>  
+    <h2 id="header" >Calculator</h2>
+        <div class="container0">
+            <div class="container1">
+            
+            <table id="table" style="width: 100%;">
+            <tr>
+                <td colspan="3"><input type="text"   id="text-input" disabled/></td>
+                <td><input type="button" value="AC" id="ac-btn" onclick="clearInput()"/></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" value="9" id="btn" onclick="display('9')"/></td>
+                <td><input type="button" value="8" id="btn" onclick="display('8')"/></td>
+                <td><input type="button" value="7" id="btn" onclick="display('7')"/></td>
+                <td><input type="button" value="+" id="btn-op" onclick="display('+')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" id="btn" onclick="display('4')"/></td>
+                <td><input type="button" value="5" id="btn" onclick="display('5')"/></td>
+                <td><input type="button" value="6" id="btn" onclick="display('6')"/></td>
+                <td><input type="button" value="-" id="btn-op" onclick="display('-')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" id="btn" onclick="display('1')"/></td>
+                <td><input type="button" value="2" id="btn" onclick="display('2')"/></td>
+                <td><input type="button" value="3" id="btn" onclick="display('3')"/></td>
+                <td><input type="button" value="/" id="btn-op" onclick="display('/')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." id="btn" onclick="display('.')"/></td>
+                <td><input type="button" value="0" id="btn" onclick="display('0')"/></td>
+                <td><input type="button" value="=" id="btn" onclick="calculate()"/></td>
+                <td><input type="button" value="*" id="btn-op" onclick="display('*')"/></td>
+            </tr>
+                 
+            </table>
+            
+  
+        </div>
+        </div>
+
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

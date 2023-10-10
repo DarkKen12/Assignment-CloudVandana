@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500&family=Noto+Sans+JP:wght@500&family=Syne:wght@400;500;600;700;800&family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+
+    <div class="container1">
+        <form id="myform">
+        <table id="table">
+            <div class="text0"> Registration Form</div>
+            <tr>
+                <td><label for="name1"> FirstName <span id="symbol"></span></label></td>
+                <td> <input type="text" id="name1" placeholder="John"/></td>
+            </tr>
+           
+            <tr>
+                <td><label for="name2"> LastName <span id="symbol"></span></label></td>
+                <td><input type="text" id="name2" placeholder="Doe"/></td>
+                
+            </tr>
+            <tr>
+                <td><label for="date"> Date of Birth <span id="symbol"></span></label></td>
+
+                <td><input type="date" id="date" date/></td>
+            </tr>
+            <tr>
+                <td>   <label for="country" > Country <span id="symbol"></span></label></td>
+                <td>  <select name="country" id="country">
+                    <option>India</option>
+                    <option>US</option>
+                    <option>China</option>
+                    <option>Russia</option>
+                    <option>Other</option>
+                </select></td>
+            </tr>
+            <tr >
+                <td><label for="gender" > Gender <span id="symbol"></span></label></td>
+                <td id="Gender"> <input type="radio" value="Male" name="gen" id="gender" />Male
+                   <input type="radio" value="Female" name="gen" id="gender"/>Female            
+                
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="profession">Profession <span id="symbol"></span></label></td>
+                <td> <input type="text" id="profession" placeholder="Engineer"/></td>
+            </tr>
+            <tr>
+                <td> <label for="email" >Email <span id="symbol"></span></label></td>
+                <td>   <input type="email" id="email"  placeholder="johndoe@email.com"/></td>
+            </tr>
+            <tr>
+                <td>  <label for="mobno">Mobile No <span id="symbol"></span></label></td>
+                <td> <input type="text" id="mobno" placeholder="10 digit Mobile number" maxlength="10"/></td>
+            </tr>
+            
+        </table>
+    </form>
+    <div class="btn">
+        <button type="reset" id="btnReset" onclick="clearAll()">Reset</button>
+        <button type="submit"  id="btnSubmit" onclick="display()">Submit </button>
+        </div>
+    </div>   
+</body>
+</html>
